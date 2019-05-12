@@ -17,4 +17,4 @@ cd ${__root}/_site
 git init
 git add .
 git commit -m "Generated from source branch: `cd .. && git log -1 --oneline`"
-git remote add origin "https://$GH_TOKEN@github.com/ESUG/botsinclearners.github.io.git"
+git remote add origin "https://$GH_TOKEN@github.com/BotsIncLearners/botsinclearners.github.io.git"
