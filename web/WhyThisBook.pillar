@@ -1,4 +1,4 @@
-Why this book
+!! Why this book
 
 I wrote this book for my wife, who is a physics and mathematics teacher in a French school where the students are between eleven and fifteen years old. She had to teach computer sciences and I decided to help her understanding key concepts in programming and teaching them. As a computer scientist, I was aware of work on the programming language Logo and that the programming language Smalltalk had been influenced by the ideas of Logo. I discovered that Smalltalk is a powerful language and has a simple syntax that mimics natural language and that it had originated from research on teaching programming to children. At about that time, the Squeak open-source multimedia Smalltalk had arrived at a mature state, and books started to become available in late 1999. But these were for experienced programmers, so I started and wrote the present book.
 
