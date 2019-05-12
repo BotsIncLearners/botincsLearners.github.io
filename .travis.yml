@@ -1,0 +1,15 @@
+language: c
+addons:
+  apt:
+    packages:
+    - libasound2:i386
+    - lib32z1
+    - lib32bz2-1.0
+    - libssl1.0.0:i386
+    - libfreetype6:i386
+script:
+- if [[ ${TRAVIS_BRANCH} == "source" ]]; then make generate; fi
+- if [[ ${TRAVIS_BRANCH} == "source" && ${TRAVIS_PULL_REQUEST} == "false" ]]; then
+  make deploy; fi
+login:
+  secure: U83uXjvIIWj3qVmJfBDLYiWjzFoTEyLQlIwDFkj185yW0vS5DQANw6ID8jbjKl50UxsSPDwAPYIVGDwFhF59JBtwcO0Kujhrilcjhnp9I+WGFjvB2/I1FpI9MjNbwvdSQVMP7F1EKG+ywZg7yc9TWJB2MThQ+L+sTY/AG3u7ajL1vX5Wo5ipeQrFWonUQAQwMsCMXUhTpFZ48BH2P6uNM++lx8zRVRgbT2JHcnNi0DUO61BZAJT/u/Zbntf1p31BXP4jFsV8fxTl/b5DMIpRErjNI0F62Bku7Dqqvn1+Ho+iX8lns2Iv/9cgaXBficeVpa1AfC0sEPoaMU4INLlj2TX9pKvnQ7kAqQMnc+nW0LpUiLg8ND0gsZ1BjJHj/iKLsRPmDnwFkfr8C3SDI4UGaZgb1VmsgS16T2of/27mpq98Rt/1UyWX4gQXHJ5pFAGRk+ZIcaGx3m3Dj/z6Jxl0eL0axK2cWtShPpmeL7+eVijxy8jhpqkNWRaeeNl7sb28DkdAXkkYyHpiUSxfRAI5YbHSlG3E8uLqCKr7RUR+xF58M5IO95Iy/8OZVCILlzF2rACdOI0YZ6lpzp60vC0/W3mdAZd5yjE97v/oGNpzRVu7GdbxrmLmJaNeb9hWT7BOUhlOsLxCHZBNX7JZ0SFNwn29OtD5U+qbw3qmdAP5TPs=
