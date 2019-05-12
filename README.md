@@ -38,10 +38,13 @@ gem update --system
 Then cd into your repository and encrypt an environment variable called `GH_TOKEN` with your token assigned. This environment variable will be used by the `prepare_for_deploy.sh` script later on.
 
 ```bash
+$ travis login --pro
 $ travis encrypt GH_TOKEN=<api-token> --add
 ```
 
 This will modify your .travis.yml file.
+
+- Do not forget to add you GH_TOKEN to your travis account environment variables.
 
 - Commit and push!
 
