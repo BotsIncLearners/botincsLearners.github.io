@@ -8,7 +8,7 @@
 
 !Welcome to BotsInc
 
-+file://images/Cover-mini.jpeg+
++file://images/Cover-mini.jpg+
 
 Welcome to Bots Inc! BotsInc is the environment of the book Squeak: Learn Programming with Robots. With Bots Inc you will learn how to program robots in an interactive environment. Bots Inc proposes three teaching approaches: direct command of robots, scripting robots and programming robots. The book contains 24 chapters going step by step over topics with a lot of examples. Bots Inc is fun but it is not a toy, it teaches you 100\% real programming. Bots Inc is built on top of the rich open-source multimedia Squeak environment. If you are interested in programming, I suggest to have a look at our new exciting project Pharo and its companion book PharoByExample.
 
